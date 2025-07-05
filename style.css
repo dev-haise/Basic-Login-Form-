@@ -1,0 +1,9 @@
+body {
+    background-color: #f0f2f5;
+}
+
+.login-form {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+}
