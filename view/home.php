@@ -1,14 +1,3 @@
-<?php
-
-session_start();
-
-if (!isset($_SESSION['username'])) {
-    header("Location: login.html");
-    exit();
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,19 +28,12 @@ if (!isset($_SESSION['username'])) {
 
 <body>
     <div class="container mt-5">
-
-
-
         <h2 class="text-center mb-3 text-primary">Welcome from Home Page,
-            <?php echo htmlspecialchars($_SESSION['username']); ?>! </h2>
-
-
-
+            <?php echo htmlspecialchars($_SESSION['username']); ?>! 
+        </h2>
         <div class="logout-container">
-            <a href="logout.php" class="btn btn-danger">Log out </a>
+            <a href="/logout" class="btn btn-danger">Log out </a>
         </div>
-
     </div>
 </body>
-
 </html>
